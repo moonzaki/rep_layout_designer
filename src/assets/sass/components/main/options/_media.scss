@@ -1,0 +1,35 @@
+@use "./../../../common/mixins" as m;
+
+.options {
+    @include m.media(
+        (
+            max: 768,
+        ),
+        (
+            padding: 324px 0 245px,
+        )
+    );
+
+    @include m.media(
+        (
+            max: 680,
+        ),
+        (
+            padding: 74px 0 52px,
+        )
+    );
+
+    &__list {
+        @include m.media(
+            (
+                max: 680,
+            ),
+            (
+                flex-direction: column,
+                justify-content: center,
+                align-items: center,
+                gap: 24px,
+            )
+        );
+    }
+}

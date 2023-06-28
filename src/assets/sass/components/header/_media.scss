@@ -1,0 +1,12 @@
+@use "./../../common/mixins" as m;
+
+.header {
+    @include m.media(
+        (
+            max: 680,
+        ),
+        (
+            padding: 8px 0,
+        )
+    );
+}

@@ -1,0 +1,19 @@
+// COLORS PALITE
+
+$primary-gray: #eeeeee;
+$secondary-gray: #303030;
+$primary-black: #000000;
+$secondary-black: #222222;
+$primary-white: #ffffff;
+$secondary-white: rgb(255, 255, 255, 0.9);
+$primary-blue: #4374e5;
+
+$colors: (
+    primary-gray: $primary-gray,
+    secondary-gray: $secondary-gray,
+    primary-black: $primary-black,
+    secondary-black: $secondary-black,
+    primary-white: $primary-white,
+    secondary-white: $secondary-white,
+    primary-blue: $primary-blue,
+);

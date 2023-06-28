@@ -1,0 +1,21 @@
+@forward "./../../common/placeholders";
+@use "~rfs/scss" as rfs;
+
+footer {
+    @extend %montserrat-medium;
+    font-size: 13px;
+    @extend %background--secondary-gray;
+    @extend %color--primary-white;
+}
+
+.footer {
+    @extend %flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    box-sizing: border-box;
+
+    p {
+        margin: 0;
+    }
+}

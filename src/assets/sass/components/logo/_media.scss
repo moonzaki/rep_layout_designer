@@ -1,0 +1,14 @@
+@use "./../../common/mixins" as m;
+
+.logo {
+    img {
+        @include m.media(
+            (
+                max: 680,
+            ),
+            (
+                max-width: 127px,
+            )
+        );
+    }
+}

@@ -1,0 +1,15 @@
+@forward "./../../../common/placeholders";
+@use "~rfs/scss" as rfs;
+
+.options {
+    @extend %flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    @include rfs.padding(272px 0 193px);
+
+    &__list {
+        @extend %flex;
+        gap: 32px;
+    }
+}

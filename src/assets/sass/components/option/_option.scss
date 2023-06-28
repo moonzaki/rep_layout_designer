@@ -1,0 +1,57 @@
+@use "./../../common/variables" as v;
+@forward "./../../common/placeholders";
+
+@use "~rfs/scss" as rfs;
+
+.option {
+    @extend %flex-col;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 352px;
+    padding: 48px 24px;
+    @extend %background--primary-white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &__img {
+        @extend %flex;
+        max-width: 72px;
+        width: 100%;
+        margin-bottom: 32px;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &--hover {
+        box-shadow: 0px 4px 30px 0px rgba(67, 116, 229, 0.4);
+
+        .option__img {
+            svg {
+                g {
+                    path {
+                        fill: v.$primary-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 16px;
+        font-size: 32px;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 16px;
+        line-height: 148%;
+        text-align: center;
+    }
+}

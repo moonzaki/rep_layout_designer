@@ -1,0 +1,39 @@
+@use "./mixins" as m;
+@use "~rfs/scss" as rfs;
+// FLEX
+
+%flex {
+    display: flex;
+}
+
+%flex-row {
+    @extend %flex;
+    flex-direction: row;
+}
+
+%flex-col {
+    @extend %flex;
+    flex-direction: column;
+}
+
+// BG, COLOR, BORDER
+
+@include m.set_modifier_tag();
+
+// FONTS
+
+%montserrat-regular {
+    font-family: "Montserrat";
+    @include rfs.font-size(16px);
+}
+
+%montserrat-medium {
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+    @include rfs.font-size(16px);
+}
+
+%montserrat-bold {
+    font-family: "Montserrat-Bold";
+    @include rfs.font-size(32px);
+}

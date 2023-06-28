@@ -1,0 +1,28 @@
+@use "./../variables" as v;
+@forward "./../placeholders";
+
+/* Works on Firefox */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    @extend %montserrat-regular;
+    @extend %background--primary-gray;
+    @extend %color--secondary-black;
+}
+
+@for $i from 1 to 9 {
+    h#{$i} {
+        @extend %montserrat-bold;
+    }
+}
+
+.loading * {
+    transition: 0s !important;
+    transition-delay: 0s !important;
+}
+
+.scroll--lock {
+    overflow: hidden;
+}

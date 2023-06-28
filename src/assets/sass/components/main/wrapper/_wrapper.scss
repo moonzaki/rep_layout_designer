@@ -1,0 +1,7 @@
+@use "~rfs/sass" as rfs;
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    @include rfs.padding(0 120px);
+}

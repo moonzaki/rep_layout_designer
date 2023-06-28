@@ -1,0 +1,12 @@
+@use "./../../../common/mixins" as m;
+
+.wrapper {
+    @include m.media(
+        (
+            max: 1023,
+        ),
+        (
+            padding: 0 16px,
+        )
+    );
+}

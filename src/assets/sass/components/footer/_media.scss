@@ -1,0 +1,15 @@
+@use "./../../common/mixins" as m;
+
+.footer {
+    @include m.media(
+        (
+            max: 680,
+        ),
+        (
+            flex-direction: column,
+            justify-content: center,
+            align-items: center,
+            gap: 12px,
+        )
+    );
+}

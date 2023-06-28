@@ -1,0 +1,41 @@
+@forward "./../../../common/placeholders";
+@forward "./media";
+
+.nav {
+    &__list {
+        @extend %flex;
+        gap: 32px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &-item {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+            a {
+                text-decoration: none;
+                @extend %color--secondary-black;
+
+                &:visited {
+                    @extend %color--secondary-black;
+                }
+            }
+
+            &--hover {
+                @extend %color--primary-blue;
+
+                a {
+                    @extend %color--primary-blue;
+
+                    &:visited {
+                        @extend %color--primary-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &--open {
+        transform: translateX(0%);
+    }
+}

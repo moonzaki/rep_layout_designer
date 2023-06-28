@@ -1,0 +1,12 @@
+@use "./../../../common/mixins" as m;
+
+.header-burger {
+    @include m.media(
+        (
+            max: 680,
+        ),
+        (
+            display: flex,
+        )
+    );
+}
